@@ -1,10 +1,6 @@
-import { defineConfig } from "oxlint";
+import { defineConfig, type OxlintConfig } from "oxlint";
 
-export default defineConfig({
-  options: {
-    typeAware: true,
-    typeCheck: true,
-  },
+const config: OxlintConfig = defineConfig({
   rules: {
     "prefer-node-protocol": "error",
     "no-var": "error",
@@ -12,7 +8,7 @@ export default defineConfig({
     "no-this-alias": "error",
     "prefer-const": "error",
     "no-explicit-any": "error",
-
-    "typescript/no-unnecessary-type-assertion": "error",
   },
 });
+
+export default config;

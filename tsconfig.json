@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "noEmit": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "isolatedDeclarations": true,
 
     "target": "esnext",
     "module": "esnext",
@@ -24,5 +26,5 @@
     "forceConsistentCasingInFileNames": true,
     "verbatimModuleSyntax": true
   },
-  "include": ["**/*.ts"]
+  "include": ["src"]
 }

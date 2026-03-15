@@ -1,1 +1,1 @@
-export { default } from "./configs/oxlint/default.ts";
+export { default } from "./src/configs/oxlint/default.ts";
