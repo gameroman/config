@@ -1,6 +1,6 @@
 {
   "name": "@gameroman/config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -49,6 +49,9 @@
       "optional": true
     },
     "oxlint-tsgolint": {
+      "optional": true
+    },
+    "typescript": {
       "optional": true
     }
   }

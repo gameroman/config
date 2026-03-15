@@ -24,6 +24,7 @@
         "oxfmt",
         "oxlint",
         "oxlint-tsgolint",
+        "typescript",
       ],
     },
   },
