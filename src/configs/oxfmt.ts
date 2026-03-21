@@ -1,6 +1,6 @@
-import { defineConfig, type FormatOptions } from "oxfmt";
+import { defineConfig, type FormatConfig } from "oxfmt";
 
-const config: FormatOptions = defineConfig({
+const config: FormatConfig = defineConfig({
   printWidth: 80,
   sortImports: {},
 });

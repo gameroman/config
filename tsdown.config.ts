@@ -6,12 +6,12 @@ export default defineConfig({
     oxlint: "./src/configs/oxlint/default.ts",
     "oxlint/typeaware": "./src/configs/oxlint/typeaware.ts",
   },
-  copy: ["./src/configs/biome.json"],
+  copy: ["src/configs/biome"],
   dts: true,
   exports: {
     enabled: true,
     customExports(pkg) {
-      pkg["./biome"] = "./dist/biome.json";
+      pkg["./biome"] = "./dist/biome/default.json";
       return pkg;
     },
   },

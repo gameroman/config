@@ -14,6 +14,7 @@ const config: OxlintConfig = defineConfig({
     "no-explicit-any": "error",
 
     "typescript/no-unnecessary-type-assertion": "error",
+    "typescript/no-floating-promises": "error",
   },
 });
 

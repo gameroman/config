@@ -1,6 +1,6 @@
 {
   "name": "@gameroman/config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
     "./oxlint": "./dist/oxlint.mjs",
     "./oxlint/typeaware": "./dist/oxlint/typeaware.mjs",
     "./package.json": "./package.json",
-    "./biome": "./dist/biome.json"
+    "./biome": "./dist/biome/default.json"
   },
   "scripts": {
     "format": "oxfmt",
@@ -24,11 +24,11 @@
     "prepublishOnly": "bun run build"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.7",
-    "oxfmt": "^0.40.0",
-    "oxlint": "^1.54.0",
-    "oxlint-tsgolint": "^0.17.0",
-    "tsdown": "^0.21.3",
+    "@biomejs/biome": "^2.4.8",
+    "oxfmt": "^0.41.0",
+    "oxlint": "^1.56.0",
+    "oxlint-tsgolint": "^0.17.1",
+    "tsdown": "^0.21.4",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
