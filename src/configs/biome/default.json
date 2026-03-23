@@ -18,8 +18,10 @@
   "linter": {
     "rules": {
       "style": {
-        "useNodejsImportProtocol": "error"
-      }
+        "useNodejsImportProtocol": "error",
+        "noNonNullAssertion": "error"
+      },
+      "suspicious": { "noExplicitAny": "error" }
     }
   },
   "html": {

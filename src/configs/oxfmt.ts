@@ -1,8 +1,8 @@
-import { defineConfig, type FormatConfig } from "oxfmt";
+import type { FormatConfig } from "oxfmt";
 
-const config: FormatConfig = defineConfig({
+const config: FormatConfig = {
   printWidth: 80,
   sortImports: {},
-});
+};
 
-export default config;
+export { config };

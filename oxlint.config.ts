@@ -1,1 +1,7 @@
-export { default } from "./src/configs/oxlint/default.ts";
+import { defineConfig } from "./src/configs/oxlint/default.ts";
+
+export default defineConfig({
+  rules: {
+    "sort-keys": "error",
+  },
+});

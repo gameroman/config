@@ -1,14 +1,23 @@
-import { defineConfig, type OxlintConfig } from "oxlint";
+import type { OxlintConfig } from "oxlint";
 
-const config: OxlintConfig = defineConfig({
+const config: OxlintConfig = {
   rules: {
-    "prefer-node-protocol": "error",
-    "no-var": "error",
-    "no-unused-vars": "error",
-    "no-this-alias": "error",
-    "prefer-const": "error",
+    "no-eval": "error",
     "no-explicit-any": "error",
+    "no-this-alias": "error",
+    "no-unused-vars": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+    "prefer-node-protocol": "error",
   },
-});
+};
 
-export default config;
+function defineConfig(options?: OxlintConfig): OxlintConfig {
+  return {
+    ...config,
+    ...options,
+    rules: { ...config.rules, ...options?.rules },
+  };
+}
+
+export { config, defineConfig };

@@ -1,21 +1,28 @@
-import { defineConfig, type OxlintConfig } from "oxlint";
+import type { OxlintConfig } from "oxlint";
 
-const config: OxlintConfig = defineConfig({
+import { defineConfig as defaultDefineConfig } from "./default";
+
+const config: OxlintConfig = defaultDefineConfig({
   options: {
     typeAware: true,
     typeCheck: true,
   },
   rules: {
-    "prefer-node-protocol": "error",
-    "no-var": "error",
-    "no-unused-vars": "error",
-    "no-this-alias": "error",
-    "prefer-const": "error",
-    "no-explicit-any": "error",
-
-    "typescript/no-unnecessary-type-assertion": "error",
     "typescript/no-floating-promises": "error",
+    "typescript/no-misused-promises": [
+      "error",
+      { checksVoidReturn: { arguments: false } },
+    ],
+    "typescript/no-unnecessary-type-assertion": "error",
   },
 });
 
-export default config;
+function defineConfig(options?: OxlintConfig): OxlintConfig {
+  return {
+    ...config,
+    ...options,
+    rules: { ...config.rules, ...options?.rules },
+  };
+}
+
+export { config, defineConfig };
