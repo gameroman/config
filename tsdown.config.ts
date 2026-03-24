@@ -1,7 +1,7 @@
 import { defineConfig } from "tsdown";
 
 export default defineConfig({
-  copy: ["src/configs/biome"],
+  copy: ["src/configs/biome", "src/configs/tsconfig"],
   dts: true,
   entry: {
     oxfmt: "./src/configs/oxfmt.ts",
@@ -11,6 +11,7 @@ export default defineConfig({
   exports: {
     customExports(pkg) {
       pkg["./biome"] = "./dist/biome/default.json";
+      pkg["./tsconfig"] = "./dist/tsconfig/default.json";
       return pkg;
     },
     enabled: true,

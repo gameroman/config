@@ -19,9 +19,10 @@
     "rules": {
       "style": {
         "useNodejsImportProtocol": "error",
-        "noNonNullAssertion": "error"
+        "noNonNullAssertion": "error",
+        "useConst": "error"
       },
-      "suspicious": { "noExplicitAny": "error" }
+      "suspicious": { "noExplicitAny": "error", "noVar": "error" }
     }
   },
   "html": {

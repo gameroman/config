@@ -5,4 +5,8 @@ const config: FormatConfig = {
   sortImports: {},
 };
 
-export { config };
+function defineConfig(options?: FormatConfig): FormatConfig {
+  return { ...config, ...options };
+}
+
+export { config, defineConfig };
