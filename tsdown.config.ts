@@ -11,7 +11,10 @@ export default defineConfig({
   exports: {
     customExports(pkg) {
       pkg["./biome"] = "./dist/biome/default.json";
+      pkg["./ts"] = "./dist/tsconfig/default.json";
       pkg["./tsconfig"] = "./dist/tsconfig/default.json";
+      pkg["./ts/isolated"] = "./dist/tsconfig/isolated.json";
+      pkg["./tsconfig/isolated"] = "./dist/tsconfig/isolated.json";
       return pkg;
     },
     enabled: true,

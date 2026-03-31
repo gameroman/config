@@ -1,8 +1,8 @@
 import type { OxlintConfig } from "oxlint";
 
-import { defineConfig as defaultDefineConfig } from "./default";
+import { defineConfig as extendDefaultConfig } from "./default";
 
-const config: OxlintConfig = defaultDefineConfig({
+const config: OxlintConfig = extendDefaultConfig({
   options: {
     typeAware: true,
     typeCheck: true,
@@ -13,15 +13,17 @@ const config: OxlintConfig = defaultDefineConfig({
       "error",
       { checksVoidReturn: { arguments: false } },
     ],
+    "typescript/no-unnecessary-condition": "error",
     "typescript/no-unnecessary-type-assertion": "error",
   },
 });
 
-function defineConfig(options?: OxlintConfig): OxlintConfig {
+function defineConfig(userConfig?: OxlintConfig): OxlintConfig {
   return {
     ...config,
-    ...options,
-    rules: { ...config.rules, ...options?.rules },
+    ...userConfig,
+    options: { ...config.options, ...userConfig?.options },
+    rules: { ...config.rules, ...userConfig?.rules },
   };
 }
 
