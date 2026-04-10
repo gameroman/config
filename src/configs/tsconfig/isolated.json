@@ -3,6 +3,6 @@
   "extends": "./default.json",
   "compilerOptions": {
     "declaration": true,
-    "isolatedDeclarations": false
+    "isolatedDeclarations": true
   }
 }
