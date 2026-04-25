@@ -13,7 +13,10 @@ const config: OxlintConfig = extendDefaultConfig({
       "error",
       { checksVoidReturn: { arguments: false } },
     ],
-    "typescript/no-unnecessary-condition": "error",
+    "typescript/no-unnecessary-condition": [
+      "error",
+      { allowConstantLoopConditions: true },
+    ],
     "typescript/no-unnecessary-type-assertion": "error",
   },
 });

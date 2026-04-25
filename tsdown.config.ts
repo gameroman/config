@@ -10,12 +10,14 @@ export default defineConfig({
   },
   exports: {
     customExports(pkg) {
-      pkg["./biome"] = "./dist/biome/default.json";
-      pkg["./ts"] = "./dist/tsconfig/default.json";
-      pkg["./tsconfig"] = "./dist/tsconfig/default.json";
-      pkg["./ts/isolated"] = "./dist/tsconfig/isolated.json";
-      pkg["./tsconfig/isolated"] = "./dist/tsconfig/isolated.json";
-      return pkg;
+      return Object.assign(pkg, {
+        "./biome": "./dist/biome/default.json",
+        "./oxlint/ts": "./dist/oxlint/typeaware.mjs",
+        "./ts": "./dist/tsconfig/default.json",
+        "./ts/isolated": "./dist/tsconfig/isolated.json",
+        "./tsconfig": "./dist/tsconfig/default.json",
+        "./tsconfig/isolated": "./dist/tsconfig/isolated.json",
+      });
     },
     enabled: true,
   },
