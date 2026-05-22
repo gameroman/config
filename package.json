@@ -29,18 +29,18 @@
     "prepublishOnly": "bun run build"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.13",
-    "oxfmt": "^0.46.0",
-    "oxlint": "^1.61.0",
-    "oxlint-tsgolint": "^0.22.0",
-    "tsdown": "^0.21.10",
-    "typescript": "^6.0.3"
+    "@biomejs/biome": "2.4.15",
+    "oxfmt": "0.51.0",
+    "oxlint": "1.66.0",
+    "oxlint-tsgolint": "0.23.0",
+    "tsdown": "0.22.0",
+    "typescript": "6.0.3"
   },
   "peerDependencies": {
-    "@biomejs/biome": "^2.4.13",
-    "oxfmt": ">=0.46.0",
-    "oxlint": "^1.61.0",
-    "oxlint-tsgolint": ">=0.22.0",
+    "@biomejs/biome": "^2.4.15",
+    "oxfmt": ">=0.51.0",
+    "oxlint": "^1.66.0",
+    "oxlint-tsgolint": ">=0.23.0",
     "typescript": "^6.0.3"
   },
   "peerDependenciesMeta": {
@@ -59,5 +59,11 @@
     "typescript": {
       "optional": true
     }
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "overrides": {
+    "@babel/parser": "8.0.0-rc.5"
   }
 }
