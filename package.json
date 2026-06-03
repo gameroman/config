@@ -29,17 +29,17 @@
     "prepublishOnly": "bun run build"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.15",
-    "oxfmt": "0.51.0",
-    "oxlint": "1.66.0",
+    "@biomejs/biome": "2.4.16",
+    "oxfmt": "0.53.0",
+    "oxlint": "1.68.0",
     "oxlint-tsgolint": "0.23.0",
-    "tsdown": "0.22.0",
+    "tsdown": "0.22.1",
     "typescript": "6.0.3"
   },
   "peerDependencies": {
-    "@biomejs/biome": "^2.4.15",
-    "oxfmt": ">=0.51.0",
-    "oxlint": "^1.66.0",
+    "@biomejs/biome": "^2.4.16",
+    "oxfmt": ">=0.53.0",
+    "oxlint": "^1.68.0",
     "oxlint-tsgolint": ">=0.23.0",
     "typescript": "^6.0.3"
   },
