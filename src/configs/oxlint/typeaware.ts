@@ -18,6 +18,7 @@ const config: OxlintConfig = extendDefaultConfig({
       { allowConstantLoopConditions: true },
     ],
     "typescript/no-unnecessary-type-assertion": "error",
+    "typescript/no-unnecessary-type-conversion": "error",
   },
 });
 

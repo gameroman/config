@@ -1,6 +1,6 @@
 {
   "name": "@gameroman/config",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -31,16 +31,16 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.0",
-    "oxfmt": "0.54.0",
-    "oxlint": "1.69.0",
+    "oxfmt": "0.55.0",
+    "oxlint": "1.70.0",
     "oxlint-tsgolint": "0.23.0",
-    "tsdown": "0.22.2",
+    "tsdown": "0.22.3",
     "typescript": "6.0.3"
   },
   "peerDependencies": {
     "@biomejs/biome": "^2.5.0",
-    "oxfmt": ">=0.54.0",
-    "oxlint": "^1.69.0",
+    "oxfmt": ">=0.55.0",
+    "oxlint": "^1.70.0",
     "oxlint-tsgolint": ">=0.23.0",
     "typescript": "^6.0.3"
   },
@@ -60,9 +60,6 @@
     "typescript": {
       "optional": true
     }
-  },
-  "overrides": {
-    "@babel/parser": "8.0.0-rc.6"
   },
   "engines": {
     "node": ">=24"

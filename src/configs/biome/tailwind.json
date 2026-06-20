@@ -1,5 +1,4 @@
 {
-  "$schema": "../../../node_modules/@biomejs/biome/configuration_schema.json",
-  "extends": ["./default.json"],
+  "$schema": "https://biomejs.dev/schemas/latest/schema.json",
   "css": { "parser": { "tailwindDirectives": true } }
 }

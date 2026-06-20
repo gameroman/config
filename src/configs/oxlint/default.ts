@@ -9,6 +9,7 @@ const config: OxlintConfig = {
     "no-var": "error",
     "prefer-const": "error",
     "prefer-node-protocol": "error",
+    "prefer-template": "error",
   },
 };
 

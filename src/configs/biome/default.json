@@ -1,5 +1,5 @@
 {
-  "$schema": "../../../node_modules/@biomejs/biome/configuration_schema.json",
+  "$schema": "https://biomejs.dev/schemas/latest/schema.json",
   "vcs": {
     "enabled": true,
     "clientKind": "git",
@@ -20,10 +20,15 @@
       "style": {
         "useNodejsImportProtocol": "error",
         "noNonNullAssertion": "error",
-        "useConst": "error"
+        "useConst": "error",
+        "useTemplate": "error"
       },
       "suspicious": { "noExplicitAny": "error", "noVar": "error" },
-      "nursery": { "noRestrictedDependencies": "error" }
+      "nursery": {
+        "noRestrictedDependencies": "error",
+        "useReactFunctionComponentDefinition": "error"
+      },
+      "complexity": { "noUselessThisAlias": "error" }
     }
   },
   "html": {
