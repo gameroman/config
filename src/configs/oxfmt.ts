@@ -1,8 +1,8 @@
-import type { FormatConfig } from "oxfmt";
+import type { OxfmtConfig } from "oxfmt";
 
-const config: FormatConfig = { printWidth: 80, sortImports: true };
+const config: OxfmtConfig = { printWidth: 80, sortImports: true };
 
-function defineConfig(options?: FormatConfig): FormatConfig {
+function defineConfig(options?: OxfmtConfig): OxfmtConfig {
   return { ...config, ...options };
 }
 
