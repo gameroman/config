@@ -30,7 +30,7 @@
     "prepublishOnly": "bun run build"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.1",
+    "@biomejs/biome": "2.5.3",
     "oxfmt": "0.58.0",
     "oxlint": "1.73.0",
     "oxlint-tsgolint": "0.24.0",
@@ -38,11 +38,11 @@
     "typescript": "6.0.3"
   },
   "peerDependencies": {
-    "@biomejs/biome": "^2.5.1",
+    "@biomejs/biome": "^2.5.3",
     "oxfmt": ">=0.58.0",
     "oxlint": "^1.73.0",
     "oxlint-tsgolint": ">=0.24.0",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3 || ^7.0.2"
   },
   "peerDependenciesMeta": {
     "@biomejs/biome": {
